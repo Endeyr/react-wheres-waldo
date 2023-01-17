@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root "home#index"
+  get '*path', to: 'react#home'
+  root "react#home"
 end
